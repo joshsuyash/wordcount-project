@@ -1,0 +1,13 @@
+<form action='{% url 'NEWCOUNT'   %}'>
+<h1>There are {{ COUNT }} words in your text</h1>
+<input type="submit"  value="Newcount" />
+<h2>This is your text</h2>
+{{fulltext}}
+  <br/>
+
+<h3>The word that appeared max no of times is :
+  <br/> ""{{Maxword}}"" and it appeared ""{{Maxwordcount}}"" times</h3>
+
+<h4>WORDS<h4>
+<br/>
+{{wordcount}}
